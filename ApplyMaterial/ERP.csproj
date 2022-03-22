@@ -4112,6 +4112,7 @@
     <Compile Include="SystemManagement\SysMenu.aspx.designer.cs">
       <DependentUpon>SysMenu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="test.cs" />
     <Compile Include="WorkFlow\WorkFlow.aspx.cs">
       <DependentUpon>WorkFlow.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
