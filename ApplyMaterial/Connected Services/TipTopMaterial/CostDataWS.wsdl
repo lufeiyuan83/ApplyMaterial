@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CostDataIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="buCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dotype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLS" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CostDataInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CostDataInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CostDataInSoapIn">
+    <wsdl:part name="parameters" element="tns:CostDataIn" />
+  </wsdl:message>
+  <wsdl:message name="CostDataInSoapOut">
+    <wsdl:part name="parameters" element="tns:CostDataInResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CostDataWSSoap">
+    <wsdl:operation name="CostDataIn">
+      <wsdl:input message="tns:CostDataInSoapIn" />
+      <wsdl:output message="tns:CostDataInSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CostDataWSSoap" type="tns:CostDataWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CostDataIn">
+      <soap:operation soapAction="http://tempuri.org/CostDataIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CostDataWSSoap12" type="tns:CostDataWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CostDataIn">
+      <soap12:operation soapAction="http://tempuri.org/CostDataIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CostDataWS">
+    <wsdl:port name="CostDataWSSoap" binding="tns:CostDataWSSoap">
+      <soap:address location="http://etransfer.efoxconn.com/CostDataWS_Bin/CostDataWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CostDataWSSoap12" binding="tns:CostDataWSSoap12">
+      <soap12:address location="http://etransfer.efoxconn.com/CostDataWS_Bin/CostDataWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

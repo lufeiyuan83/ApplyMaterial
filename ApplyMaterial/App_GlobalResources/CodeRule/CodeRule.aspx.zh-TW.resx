@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="AddFailed" xml:space="preserve">
+    <value>新增失敗</value>
+  </data>
+  <data name="AddFixedRule" xml:space="preserve">
+    <value>添加内置規則</value>
+  </data>
+  <data name="AddSiblingNode" xml:space="preserve">
+    <value>新增同級節點</value>
+  </data>
+  <data name="AddSubNode" xml:space="preserve">
+    <value>新增子節點</value>
+  </data>
+  <data name="CanNotAddMoreNode" xml:space="preserve">
+    <value>您不能再增加子節點了，與編碼規則不符!</value>
+  </data>
+  <data name="CanNotDeleteFixedCodeRule" xml:space="preserve">
+    <value>您不能刪除一個内置編碼規則</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>編碼原則代碼</value>
+  </data>
+  <data name="CodeCanNotBlank" xml:space="preserve">
+    <value>編碼原則代碼不能爲空</value>
+  </data>
+  <data name="ConnectBusiness" xml:space="preserve">
+    <value>關聯業務</value>
+  </data>
+  <data name="DeleteFailed" xml:space="preserve">
+    <value>刪除失敗</value>
+  </data>
+  <data name="DeleteFromLeafNode" xml:space="preserve">
+    <value>請從葉子節點開始刪除</value>
+  </data>
+  <data name="DeleteNode" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DeleteNodeQuestion" xml:space="preserve">
+    <value>你真的要刪除該記錄嗎？</value>
+  </data>
+  <data name="DeleteSuccessfully" xml:space="preserve">
+    <value>刪除成功</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>字段</value>
+  </data>
+  <data name="FieldCanNotBlank" xml:space="preserve">
+    <value>字段不能爲空</value>
+  </data>
+  <data name="FixedRule" xml:space="preserve">
+    <value>内置規則</value>
+  </data>
+  <data name="GroupNo" xml:space="preserve">
+    <value>分組號</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>是否有效</value>
+  </data>
+  <data name="IsDefault" xml:space="preserve">
+    <value>是否默認值</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>編碼原則</value>
+  </data>
+  <data name="NameCanNotBlank" xml:space="preserve">
+    <value>編碼原則不能爲空</value>
+  </data>
+  <data name="NodeCodeExisted" xml:space="preserve">
+    <value>該節點代碼已經存在</value>
+  </data>
+  <data name="NodeExisted" xml:space="preserve">
+    <value>該節點已經存在</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="ParameterCode" xml:space="preserve">
+    <value>參數編碼</value>
+  </data>
+  <data name="ParameterCodeCanNotBlank" xml:space="preserve">
+    <value>參數編碼不能爲空</value>
+  </data>
+  <data name="ParameterDescription" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="ParameterName" xml:space="preserve">
+    <value>參數名稱</value>
+  </data>
+  <data name="ParameterNameCanNotBlank" xml:space="preserve">
+    <value>參數名稱不能爲空</value>
+  </data>
+  <data name="ParameterType" xml:space="preserve">
+    <value>參數類型</value>
+  </data>
+  <data name="ParameterValue" xml:space="preserve">
+    <value>參數值</value>
+  </data>
+  <data name="QuestionDeleteNode" xml:space="preserve">
+    <value>你真的要刪除該節點嗎？</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>備注</value>
+  </data>
+  <data name="Rev" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Rule" xml:space="preserve">
+    <value>規則</value>
+  </data>
+  <data name="RuleCanNotBlank" xml:space="preserve">
+    <value>規則不能爲空</value>
+  </data>
+  <data name="RuleEN" xml:space="preserve">
+    <value>規則代碼</value>
+  </data>
+  <data name="RuleENCanNotBlank" xml:space="preserve">
+    <value>規則代碼不能爲空</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SaveFailed" xml:space="preserve">
+    <value>保存失敗</value>
+  </data>
+  <data name="SaveSuccessfully" xml:space="preserve">
+    <value>保存成功</value>
+  </data>
+  <data name="Schema" xml:space="preserve">
+    <value>數據庫/表空間</value>
+  </data>
+  <data name="SchemaCanNotBlank" xml:space="preserve">
+    <value>數據庫/表空間不能爲空</value>
+  </data>
+  <data name="SelectMenuNode" xml:space="preserve">
+    <value>請選擇一個菜單節點</value>
+  </data>
+  <data name="SortNo" xml:space="preserve">
+    <value>排序號</value>
+  </data>
+  <data name="TableName" xml:space="preserve">
+    <value>表名</value>
+  </data>
+  <data name="TableNameCanNotBlank" xml:space="preserve">
+    <value>表名不能爲空</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>編碼原則</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>修改失敗</value>
+  </data>
+  <data name="UpdateNode" xml:space="preserve">
+    <value>修改</value>
+  </data>
+</root>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89267E98-D26E-413C-A1F5-4EECA4FDB79A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDAL</RootNamespace>
+    <AssemblyName>IDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PLM\IApplyMaterial.cs" />
+    <Compile Include="PLM\IFlow.cs" />
+    <Compile Include="PLM\IFlowInstance.cs" />
+    <Compile Include="PLM\IInterfaceLog.cs" />
+    <Compile Include="PLM\ILog.cs" />
+    <Compile Include="PLM\IMapping.cs" />
+    <Compile Include="PLM\IMaterial.cs" />
+    <Compile Include="PLM\ITipTopParameter.cs" />
+    <Compile Include="PLM\IUI.cs" />
+    <Compile Include="PLM\IWorkList.cs" />
+    <Compile Include="CodeRule\ICodeRule.cs" />
+    <Compile Include="CodeRule\ICodeRuleParameter.cs" />
+    <Compile Include="HRM\IDepartment.cs" />
+    <Compile Include="HRM\IEmployee.cs" />
+    <Compile Include="HRM\IOrganization.cs" />
+    <Compile Include="HRM\IPosition.cs" />
+    <Compile Include="PMS\IElement.cs" />
+    <Compile Include="PMS\IRoleRelation.cs" />
+    <Compile Include="PMS\IRole.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Auth\ICiphertext.cs" />
+    <Compile Include="Auth\ILogin.cs" />
+    <Compile Include="Auth\ISysMenu.cs" />
+    <Compile Include="Auth\ISystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{3883742b-a1c1-4f9d-92f7-6f59c66642ed}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
